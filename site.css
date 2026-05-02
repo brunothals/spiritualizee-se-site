@@ -63,17 +63,18 @@ a {
 .logo span {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid rgba(216, 184, 120, 0.72);
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(216, 184, 120, 0.52);
   border-radius: 50%;
   color: var(--gold);
   font-family: Georgia, "Times New Roman", serif;
+  background: #050505;
 }
 
 .logo img {
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
 }
 
 nav {
@@ -202,8 +203,8 @@ h1 {
 }
 
 .hero-note img {
-  width: 92px;
-  height: 92px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 18px;
   filter: drop-shadow(0 0 28px rgba(216, 184, 120, 0.22));
 }

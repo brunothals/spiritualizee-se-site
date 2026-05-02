@@ -1,11 +1,12 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Símbolo Spiritualizee-se</title>
-  <desc id="desc">Gato dourado dentro de um círculo com estrela.</desc>
-  <circle cx="90" cy="90" r="76" stroke="#D8B878" stroke-width="4"/>
-  <path d="M90 36L94.8 49.2L108 54L94.8 58.8L90 72L85.2 58.8L72 54L85.2 49.2L90 36Z" fill="#D8B878"/>
-  <path d="M71 128C61 127 52 120 52 108C52 94 65 91 70 101C75 112 62 119 62 119C62 119 73 130 87 130H93C107 130 118 119 118 119C118 119 105 112 110 101C115 91 128 94 128 108C128 120 119 127 109 128" stroke="#D8B878" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M68 118C71 105 74 88 74 70C74 59 81 56 90 70C99 56 106 59 106 70C106 88 109 105 112 118" stroke="#D8B878" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M74 70L67 54C66 51 70 49 72 52L80 62" stroke="#D8B878" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M106 70L113 54C114 51 110 49 108 52L100 62" stroke="#D8B878" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M90 83V129" stroke="#D8B878" stroke-width="4" stroke-linecap="round"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Spiritualizee-se</title>
+  <desc id="desc">Gato místico em linha dourada dentro de um círculo preto com estrela.</desc>
+  <rect width="512" height="512" rx="256" fill="#050505"/>
+  <path d="M431 346.5C397.8 412.7 329.3 458 250.3 458C138.6 458 48 367.4 48 255.7C48 144 138.6 53.4 250.3 53.4C362 53.4 452.6 144 452.6 255.7C452.6 289.4 444.4 321.2 429.8 349.2" stroke="#D8B878" stroke-width="8" stroke-linecap="round"/>
+  <path d="M257 93L266.6 119.4L293 129L266.6 138.6L257 165L247.4 138.6L221 129L247.4 119.4L257 93Z" fill="#F0D9A3"/>
+  <path d="M195 383C167 381 139 360 139 326C139 286 177 280 190 309C205 342 163 353 163 353C163 353 192 390 245 390H267C320 390 349 353 349 353C349 353 307 342 322 309C335 280 373 286 373 326C373 360 345 381 317 383" stroke="#D8B878" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M181 352C188 309 196 260 196 205C196 170 218 160 256 213C294 160 316 170 316 205C316 260 324 309 331 352" stroke="#D8B878" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M196 205L178 154C174 142 187 135 196 146L220 184" stroke="#D8B878" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M316 205L334 154C338 142 325 135 316 146L292 184" stroke="#D8B878" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 238V388" stroke="#D8B878" stroke-width="8" stroke-linecap="round"/>
 </svg>
