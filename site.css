@@ -226,6 +226,7 @@ h1 {
 .opening-experience,
 .welcome-section,
 .spiritual-help,
+.real-life-spirituality,
 .astral-section,
 .process,
 .services,
@@ -377,6 +378,51 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
+}
+
+.real-life-spirituality {
+  background: var(--paper);
+}
+
+.statement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.statement-grid article {
+  display: grid;
+  min-height: 240px;
+  place-items: end start;
+  padding: 28px;
+  border: 1px solid rgba(216, 184, 120, 0.2);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(216, 184, 120, 0.1), rgba(125, 90, 170, 0.12)),
+    #0e1114;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+.statement-grid article:nth-child(2),
+.statement-grid article:nth-child(5) {
+  background:
+    linear-gradient(145deg, rgba(137, 111, 188, 0.22), rgba(23, 42, 47, 0.88)),
+    #101417;
+}
+
+.statement-grid article:nth-child(3),
+.statement-grid article:nth-child(4) {
+  background:
+    linear-gradient(145deg, rgba(216, 184, 120, 0.16), rgba(36, 26, 45, 0.88)),
+    #101417;
+}
+
+.statement-grid p {
+  margin: 0;
+  color: var(--gold-soft);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.6rem, 3vw, 2.45rem);
+  line-height: 1.04;
 }
 
 .help-grid article {
@@ -688,6 +734,7 @@ footer p {
   .astral-section,
   .experience,
   .help-grid,
+  .statement-grid,
   .process-steps,
   .service-grid,
   .package-grid,
