@@ -204,6 +204,7 @@ h1 {
 .intro-band,
 .services,
 .experience,
+.testimonials,
 .cta-section,
 footer {
   padding: clamp(54px, 8vw, 100px) clamp(18px, 7vw, 92px);
@@ -350,6 +351,52 @@ footer {
   width: 55%;
 }
 
+.testimonials {
+  background: var(--paper);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.testimonial-grid article {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(217, 168, 160, 0.16), rgba(255, 253, 248, 0.82)),
+    var(--paper);
+  box-shadow: 0 18px 50px rgba(60, 42, 32, 0.08);
+}
+
+.testimonial-grid p {
+  color: #4b404c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.55;
+}
+
+.testimonial-grid strong {
+  display: block;
+  margin-top: 28px;
+  color: var(--plum);
+  font-weight: 900;
+}
+
+.testimonial-grid span {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
 .cta-section {
   color: #fffaf4;
   background: var(--plum);
@@ -392,7 +439,8 @@ footer p {
 
   .intro-band,
   .experience,
-  .service-grid {
+  .service-grid,
+  .testimonial-grid {
     grid-template-columns: 1fr;
   }
 
