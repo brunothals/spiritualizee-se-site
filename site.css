@@ -203,6 +203,7 @@ h1 {
 }
 
 .intro-band,
+.opening-experience,
 .welcome-section,
 .spiritual-help,
 .astral-section,
@@ -227,6 +228,7 @@ footer {
 
 .intro-band h2,
 .section-heading h2,
+.opening-experience h2,
 .welcome-section h2,
 .astral-section h2,
 .experience h2,
@@ -238,6 +240,7 @@ footer {
 }
 
 .intro-band p,
+.opening-copy p,
 .welcome-copy p,
 .astral-copy p,
 .experience-copy p,
@@ -251,6 +254,52 @@ footer {
 .section-heading {
   max-width: 740px;
   margin-bottom: 34px;
+}
+
+.opening-experience {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 410px);
+  gap: clamp(24px, 6vw, 76px);
+  align-items: stretch;
+  background: var(--cream);
+}
+
+.opening-copy {
+  max-width: 760px;
+}
+
+.opening-points {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(217, 168, 160, 0.14), rgba(255, 253, 248, 0.9)),
+    var(--paper);
+  box-shadow: 0 18px 50px rgba(60, 42, 32, 0.08);
+}
+
+.opening-points span {
+  display: block;
+  margin-bottom: 34px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.opening-points strong {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--plum);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 1;
+}
+
+.opening-points p {
+  color: var(--muted);
+  line-height: 1.75;
 }
 
 .welcome-section {
@@ -612,6 +661,7 @@ footer p {
   }
 
   .intro-band,
+  .opening-experience,
   .welcome-section,
   .astral-section,
   .experience,
