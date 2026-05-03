@@ -75,6 +75,8 @@ a {
 .logo img {
   width: 42px;
   height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 nav {
@@ -205,6 +207,8 @@ h1 {
 .hero-note img {
   width: 150px;
   height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 18px;
   filter: drop-shadow(0 0 28px rgba(216, 184, 120, 0.22));
 }
