@@ -645,10 +645,40 @@ footer {
   font-size: 1.8rem;
 }
 
+.package-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 18px;
+  padding: 7px 11px;
+  border: 1px solid rgba(216, 184, 120, 0.36);
+  border-radius: 999px;
+  color: var(--gold-soft);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.package-price {
+  display: block;
+  margin-bottom: 18px;
+  color: #fffaf4;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  line-height: 1;
+}
+
 .package-grid p {
-  min-height: 96px;
+  min-height: 118px;
   color: var(--muted);
   line-height: 1.75;
+}
+
+.package-grid small {
+  display: block;
+  min-height: 42px;
+  color: rgba(255, 250, 244, 0.58);
+  line-height: 1.55;
 }
 
 .featured-package {
@@ -659,6 +689,7 @@ footer {
 }
 
 .featured-package h3,
+.featured-package .package-badge,
 .featured-package .text-link {
   color: #fffaf4;
 }
