@@ -709,7 +709,7 @@ footer {
 
 footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 18px;
   padding-top: 28px;
@@ -725,6 +725,62 @@ footer span {
 
 footer p {
   margin-bottom: 0;
+}
+
+footer small {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 250, 244, 0.56);
+  line-height: 1.5;
+}
+
+.footer-links {
+  justify-content: flex-end;
+  max-width: 520px;
+}
+
+.legal-page {
+  min-height: 100vh;
+  padding: clamp(40px, 7vw, 86px) clamp(18px, 7vw, 92px);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 82% 10%, rgba(216, 184, 120, 0.12), transparent 24%),
+    var(--night);
+}
+
+.legal-page article {
+  max-width: 920px;
+  padding: clamp(28px, 5vw, 58px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(23, 24, 27, 0.94);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
+.legal-page h1 {
+  margin-bottom: 28px;
+  font-size: clamp(2.6rem, 6vw, 5rem);
+}
+
+.legal-page h2 {
+  margin-top: 34px;
+  margin-bottom: 12px;
+  color: var(--gold-soft);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+}
+
+.legal-page p {
+  color: var(--muted);
+  line-height: 1.78;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--gold-soft);
+  font-weight: 900;
+  border-bottom: 2px solid var(--gold);
 }
 
 @media (max-width: 900px) {
