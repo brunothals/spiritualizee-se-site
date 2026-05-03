@@ -844,6 +844,7 @@ footer small {
 
 .practice-page {
   min-height: 100vh;
+  padding-top: 82px;
   color: var(--ink);
   background:
     radial-gradient(circle at 84% 12%, rgba(216, 184, 120, 0.16), transparent 25%),
