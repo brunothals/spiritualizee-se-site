@@ -20,29 +20,15 @@ function resizeCanvas() {
 
 function draw() {
   ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight);
-  ctx.fillStyle = "#070b0d";
+  ctx.fillStyle = "#211824";
   ctx.fillRect(0, 0, canvas.offsetWidth, canvas.offsetHeight);
 
   const horizon = ctx.createLinearGradient(0, canvas.offsetHeight, canvas.offsetWidth, 0);
-  horizon.addColorStop(0, "rgba(36, 26, 45, 0.42)");
-  horizon.addColorStop(0.45, "rgba(23, 42, 47, 0.28)");
-  horizon.addColorStop(1, "rgba(216, 184, 120, 0.16)");
+  horizon.addColorStop(0, "rgba(217, 168, 160, 0.22)");
+  horizon.addColorStop(0.45, "rgba(54, 93, 99, 0.2)");
+  horizon.addColorStop(1, "rgba(210, 173, 105, 0.12)");
   ctx.fillStyle = horizon;
   ctx.fillRect(0, 0, canvas.offsetWidth, canvas.offsetHeight);
-
-  const centerX = canvas.offsetWidth * 0.76;
-  const centerY = canvas.offsetHeight * 0.45;
-  const radius = Math.min(canvas.offsetWidth, canvas.offsetHeight) * 0.22;
-  const pulse = Math.sin(Date.now() / 1400) * 0.08 + 0.18;
-  ctx.strokeStyle = `rgba(216, 184, 120, ${pulse})`;
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-  ctx.stroke();
-  ctx.strokeStyle = "rgba(240, 217, 163, 0.08)";
-  ctx.beginPath();
-  ctx.ellipse(centerX, centerY, radius * 1.36, radius * 0.36, -0.28, 0, Math.PI * 2);
-  ctx.stroke();
 
   stars.forEach((star, index) => {
     star.x += star.vx;
