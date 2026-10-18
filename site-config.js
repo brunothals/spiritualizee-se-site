@@ -16,5 +16,13 @@ window.SITE_CONFIG = {
 
   // Começo da mensagem pré-preenchida no WhatsApp. O nome do produto entra logo depois.
   waGreeting: "oi! vim pelo site e quero encomendar:",
-  waGenericMessage: "oi! vim pelo site e queria tirar uma dúvida sobre as leituras."
+  waGenericMessage: "oi! vim pelo site e queria tirar uma dúvida sobre as leituras.",
+
+  // Botão flutuante de WhatsApp em todas as páginas (true/false).
+  waFloat: true,
+
+  // TODO (tráfego pago): ID do Pixel da Meta, só dígitos. Vazio = nenhum pixel carregado.
+  // Quando preenchido, o site registra PageView e um evento "Contact" a cada clique em botão de WhatsApp
+  // (com o nome da leitura). Lembre de manter a política de privacidade atualizada.
+  metaPixelId: ""
 };

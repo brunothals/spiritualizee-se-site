@@ -54,3 +54,17 @@ python3 tools/check_links.py http://127.0.0.1:8000/
 # screenshots (precisa de: pip install playwright && python -m playwright install chromium)
 python3 tools/screenshots.py http://127.0.0.1:8000/ ./shots
 ```
+
+## Melhorias v2 (branch `melhorias-v2`)
+
+- `projecao-astral/` reescrita: níveis, sinais comuns, medo, preparação, técnica, madrugada, cuidados, FAQ (com JSON-LD) e créditos ao trabalho público de Saulo Calderon (sem vínculo).
+- `biblioteca/`: passagens de livros por tema, conferidas na fonte, + um bloco de passagem nas páginas temáticas (componente `.passage`).
+- Botão flutuante de WhatsApp em todas as páginas (`waFloat` em `site-config.js`).
+- Pixel da Meta pronto, mas desligado: preencha `metaPixelId` em `site-config.js`. Cada clique em botão de WhatsApp dispara o evento `Contact` com o nome da leitura.
+- SEO: canonical + Open Graph em todas as páginas, JSON-LD (ProfessionalService + FAQPage) na home, `robots.txt` e `sitemap.xml`.
+  **Quando o domínio próprio entrar**, troque `https://brunothals.github.io/spiritualizee-se-site/` pelo domínio novo em todos os HTML, no `robots.txt` e no `sitemap.xml`:
+
+  ```bash
+  grep -rl "brunothals.github.io/spiritualizee-se-site/" . --include="*.html" --include="*.xml" --include="*.txt" | xargs sed -i 's#https://brunothals.github.io/spiritualizee-se-site/#https://SEUDOMINIO.com.br/#g'
+  ```
+- `consultas/`: tabela “qual leitura é pra vc” e guia “como fazer uma boa pergunta”; home com 4 dúvidas novas.
