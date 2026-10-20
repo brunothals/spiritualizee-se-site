@@ -13,7 +13,7 @@
 .lp-hero .lead { max-width: 34ch; }
 .lp-facts { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; max-width: 560px; }
 .lp-facts li { background: var(--paper); border: var(--border); border-radius: 14px; padding: .45rem .75rem .55rem; box-shadow: 3px 3px 0 var(--brown); }
-.lp-facts span { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; opacity: .75; }
+.lp-facts li > span { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; opacity: .75; }
 .lp-facts b { font-family: var(--display); font-weight: 900; font-variation-settings: "SOFT" 100; font-size: 1.05rem; line-height: 1.1; }
 .lp-micro { font-size: .82rem; font-style: italic; margin-top: .9rem; max-width: 46ch; }
 .lp-hero-art { max-width: 340px; margin: 0 auto; transform: rotate(2.5deg); }
@@ -110,3 +110,4 @@
 .lp-offer .wrap > * { min-width: 0; }
 .lp-price-card h2 { font-size: clamp(1.5rem, 6.4vw, 2.6rem); hyphens: auto; }
 .lp-row > label, .lp-form input { min-width: 0; } .lp-form input[type=date], .lp-form input[type=time] { -webkit-appearance: none; appearance: none; }
+.lp-facts b span { display: inline; font: inherit; text-transform: none; letter-spacing: 0; opacity: 1; }
