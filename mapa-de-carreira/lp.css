@@ -111,3 +111,21 @@
 .lp-price-card h2 { font-size: clamp(1.5rem, 6.4vw, 2.6rem); hyphens: auto; }
 .lp-row > label, .lp-form input { min-width: 0; } .lp-form input[type=date], .lp-form input[type=time] { -webkit-appearance: none; appearance: none; }
 .lp-facts b span { display: inline; font: inherit; text-transform: none; letter-spacing: 0; opacity: 1; }
+/* card "comece pelo simples" e upgrade */
+.lp-downsell { padding: 2rem 0; border-bottom: var(--border); }
+.lp-mini { display: grid; gap: 1rem; align-items: center; background: var(--lilac); border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.2rem 1.2rem 1.3rem; }
+.lp-mini h2 { font-size: clamp(1.45rem, 6vw, 2.2rem); margin-bottom: .4rem; }
+.lp-mini p { margin: 0; font-size: .98rem; }
+.lp-mini-cta { display: flex; flex-direction: column; gap: .7rem; align-items: stretch; }
+.lp-link { font-size: .9rem; font-style: italic; text-align: center; }
+@media (min-width: 820px) { .lp-mini { grid-template-columns: 1.6fr .8fr; padding: 1.6rem 2rem; } }
+.lp-upgrade .lp-up { display: grid; gap: 1.6rem; align-items: center; }
+@media (min-width: 900px) { .lp-upgrade .lp-up { grid-template-columns: 1fr 1fr; } }
+.lp-up-card { background: var(--paper); border: var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.3rem 1.2rem; }
+.lp-up-card .lp-price { font-size: clamp(3rem, 15vw, 4.4rem); }
+.lp-up-card .btn { width: 100%; margin-top: .6rem; }
+.lp-compare { width: 100%; border-collapse: collapse; font-size: .92rem; margin: .4rem 0 1rem; }
+.lp-compare th, .lp-compare td { border-bottom: 2px dashed var(--brown); padding: .45rem .3rem; text-align: left; vertical-align: top; }
+.lp-compare th { font-family: var(--display); font-weight: 800; font-variation-settings: "SOFT" 100; text-transform: lowercase; }
+[hidden] { display: none !important; }
+.btn [data-lp="price"] { text-transform: none; }

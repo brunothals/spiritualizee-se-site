@@ -33,6 +33,19 @@ window.SITE_CONFIG = {
     installments: 6,        // parcelas no cartão (link de pagamento). 0 = esconde a linha do cartão.
     deliveryHours: 24,      // prazo prometido na página, em horas, depois do pagamento confirmado.
     pages: "cerca de 20",   // tamanho do PDF mostrado na página (o exemplo gerado tem 22 páginas).
-    showTestimonials: false // true SÓ quando houver depoimentos reais, com autorização por escrito.
+    showTestimonials: false, // true SÓ quando houver depoimentos reais, com autorização por escrito.
+    // Link do checkout da Kiwify (aba "Links" do produto). Preenchido = botões vão pro checkout, levando as UTMs do anúncio.
+    // Vazio = botões vão pro WhatsApp (ou pros contatos do site, enquanto o número estiver vazio).
+    checkoutUrl: ""
+  },
+
+  // Página de entrada /mapa-astral/ (Mapa Astral Simples, oferta de R$ 9,90 que puxa o Mapa de Carreira).
+  mapaSimples: {
+    price: 9.90,            // TODO: confirmar. Preço no Pix/cartão, em reais (com centavos: 9.90).
+    installments: 0,        // 0 = não mostra parcelamento (não faz sentido em R$ 9,90).
+    deliveryHours: 24,
+    pages: "cerca de 7",    // o exemplo gerado tem 7 páginas.
+    showTestimonials: false,
+    checkoutUrl: ""         // link do checkout Kiwify do Mapa Astral Simples.
   }
 };

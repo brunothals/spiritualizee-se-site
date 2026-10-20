@@ -28,7 +28,7 @@
     Regras desta página: sem preço "de" de fachada, sem depoimento/nota/contagem de clientes inventados,
     sem promessa de dinheiro, emprego ou sucesso garantido.
   -->
-  <body class="lp" data-wa-context="mapa de carreira">
+  <body class="lp" data-product="mapaCarreira" data-wa-context="mapa de carreira">
     <a class="skip-link" href="#conteudo">pular para o conteúdo</a>
     <header class="site-header lp-header">
       <div class="wrap">
@@ -180,11 +180,17 @@
       <section class="section bg-lilac" id="como-funciona" aria-labelledby="como-title">
         <div class="wrap">
           <div class="section-head"><span class="kicker">passo a passo</span><h2 id="como-title">como funciona</h2></div>
-          <ol class="steps lp-steps">
+          <ol class="steps lp-steps" data-lp-mode="wa">
             <li><h3>chama no whatsapp</h3><p>toca no botão. a mensagem já vai escrita, com o espaço pros seus dados.</p></li>
             <li><h3>manda seus dados</h3><p>nome completo, cidade, data e hora de nascimento (a hora tá na certidão).</p></li>
             <li><h3>paga</h3><p><span data-lp="price">R$ 37</span> no Pix<span data-lp-installments-row>, ou em até <span data-lp="installments">6</span>x no cartão pelo link de pagamento</span>.</p></li>
             <li><h3>recebe o PDF</h3><p>a gente calcula o seu céu e o mapa chega no seu whatsapp em até <span data-lp="hours">24</span>h depois do pagamento confirmado.</p></li>
+          </ol>
+          <ol class="steps lp-steps" data-lp-mode="checkout" hidden>
+            <li><h3>toca no botão</h3><p>vc vai pro checkout seguro da Kiwify.</p></li>
+            <li><h3>paga</h3><p><span data-lp="price">R$ 37</span> no Pix<span data-lp-installments-row>, ou em até <span data-lp="installments">6</span>x no cartão</span>.</p></li>
+            <li><h3>manda seus dados</h3><p>na página de confirmação: nome completo, cidade, data e hora de nascimento (a hora tá na certidão).</p></li>
+            <li><h3>recebe o PDF</h3><p>a gente calcula o seu céu e o mapa chega no seu whatsapp (ou e-mail) em até <span data-lp="hours">24</span>h.</p></li>
           </ol>
           <p class="notice lp-notice"><b>não sabe a hora?</b> dá pra fazer com <i>casas solares</i> (o PDF explica como), mas o Ascendente e o Meio do Céu ficam de fora. se puder, procura na certidão de nascimento ou na caderneta de vacinação.</p>
         </div>
@@ -261,6 +267,23 @@
             <button class="btn btn--mustard" type="submit">enviar no whatsapp</button>
             <p class="lp-micro">ao enviar, vc concorda com a <a href="../privacidade/index.html">política de privacidade</a>.</p>
           </form>
+        </div>
+      </section>
+
+      <!-- ENTRADA MAIS BARATA: Mapa Astral Simples -->
+      <section class="lp-downsell bg-paper" aria-labelledby="simples-title">
+        <div class="wrap">
+          <div class="lp-mini">
+            <div>
+              <span class="kicker">quer começar pelo simples?</span>
+              <h2 id="simples-title">mapa astral simples · <span data-lp="price" data-lp-of="mapaSimples">R$ 9,90</span></h2>
+              <p>Sol, Lua, Ascendente e elementos, em <span data-lp="pages" data-lp-of="mapaSimples">cerca de 7</span> páginas. o mesmo cálculo, numa leitura curta pra conhecer o seu céu.</p>
+            </div>
+            <div class="lp-mini-cta">
+              <a class="btn btn--mustard" href="../index.html#contato" data-lp-wa="carreira-downsell" data-lp-of="mapaSimples">quero o simples</a>
+              <a class="lp-link" href="../mapa-astral/index.html">ver o que vem no simples →</a>
+            </div>
+          </div>
         </div>
       </section>
 
